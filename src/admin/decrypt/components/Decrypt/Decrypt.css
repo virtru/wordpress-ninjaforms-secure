@@ -1,0 +1,15 @@
+.decryptText {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.decryptTitle {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 26px;
+}
+.decryptLoading {
+
+}

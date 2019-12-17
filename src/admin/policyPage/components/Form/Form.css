@@ -1,0 +1,126 @@
+.virtruSubmittedForm {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+.virtruFormTitle{
+    display: flex;
+    background: #e2e2e2;
+    align-content: center;
+    justify-content: stretch;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.virtruFormName {
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    justify-content: space-between;
+}
+
+.virtruFormWrapper {
+    display: block;
+    float: left;
+    width: 100%;
+    background: #f3f3f3;
+    padding: 15px;
+}
+.virtruInfoTitle {
+    width: 100%;
+    display: block;
+    font: 24px/28px 'Arial';
+    font-weight: bold;
+    margin-bottom: 20px;
+    float: left;
+}
+.virtruSideWrapper {
+    float: left;
+    width: 50%;
+}
+.virtruInfoWrapper {
+    width: 100%;
+    float: left;
+}
+.virtruFormWrapper table {
+    width: 90%;
+    border-collapse: collapse;
+}
+.virtruFormWrapper table td{
+    border: 1px solid #dee5e8;
+    padding: 8px 15px;
+}
+.virtruFormWrapper table input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.virtruFormWrapper table button{
+    height: 30px;
+    border-color: #164db6;
+    color: #ffffff;
+    background: #164db6;
+    cursor: pointer;
+}
+.virtruFormWrapper table button:disabled{
+    background: #949494;
+    border-color: #949494;
+    cursor: default;
+}
+.virtruLogWrapper {
+    width: 100%;
+    float: left;
+    background: #2c313b;
+    color: #ffffff;
+    min-height: 400px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.virtruLogWrapper pre {
+    padding: 15px 20px;
+    border-bottom: 1px solid #767d8c;
+    white-space: normal;
+    margin: 0;
+}
+
+.virtruLogWrapper pre *{
+    display: inline-block;
+}
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+.recipientItem {
+    display: inline-block;
+    padding: 3px 20px 3px 5px;
+    background: #a7d2f9;
+    position: relative;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+.recipientItem:before {
+    position: absolute;
+    content: 'x';
+    font-szie: 12px;
+    color: #ff2d4b;
+    right: 5px;
+    width: 10px;
+    text-align: center;
+}
+.recipientItemDisable {
+    cursor: default;
+    pointer-events: none;
+    background: #a7d2f9;
+}
+.recipientItemDisable:before {
+    display: none;
+}
+.activeStatus {
+    color: #154db6;
+}
+.revokeStatus {
+    color: #ff2d4b;
+}

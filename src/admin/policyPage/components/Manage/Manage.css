@@ -1,0 +1,17 @@
+.manageWrapper {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.manageTitle {
+    display: block;
+    margin: 30px 0;
+    font: 25px/30px 'Arial';
+    font-weight: bold;
+    float: left;
+    width: 100%;
+}
+.submittedForms {
+    display: block;
+    float: left;
+    width: 100%;
+}

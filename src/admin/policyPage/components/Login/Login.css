@@ -1,0 +1,17 @@
+.loginWrapper{
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 70px);
+}
+.loginForm {
+    width: 600px;
+    display: flex;
+    margin: 100px auto;
+    flex-direction: column;
+}
+.formTitle {
+    width: 100%;
+    margin-bottom: 40px;
+    font: 24px/36px 'Arial';
+    text-align: center;
+}

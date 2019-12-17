@@ -1,0 +1,20 @@
+.header {
+    height: 70px;
+    width: 100%;
+    padding: 0 25px;
+    background: #001e4a;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font: 19px/19px 'Arial';
+    justify-content: space-between;
+}
+.headerContent{
+    display: flex;
+}
+.header svg, .header span {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: #ffffff;
+}
