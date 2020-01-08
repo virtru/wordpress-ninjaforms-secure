@@ -105,8 +105,7 @@ export async function sendEncryptedForm(formId) {
         body,
     });
     const result = await response.json();
-    const domainFixLocal = '/wp-virtru.loc';
-    const manageLinkURL = `${window.location.origin}${domainFixLocal}/virtru-policy-management/`;
+    const manageLinkURL = `${window.location.origin}/virtru-policy-management/`;
     const manageLink = `<a href="${manageLinkURL}" target="_blank">Manage Virtru Policy Encryption</a>`;
     const $currentForm = $(`#nf-form-${formId}-cont`);
     $currentForm.find('.nf-form-layout').hide();
