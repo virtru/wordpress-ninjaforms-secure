@@ -26,7 +26,7 @@ function AuthModal({formId, type, fileData}) {
     };
     useEffect(() => {
         const virtruAuth = getVirtruAuth();
-        if (virtruAuth[LOCAL_STORAGE.PUBLIC_AUTH]) {
+        if (virtruAuth && virtruAuth[LOCAL_STORAGE.PUBLIC_AUTH]) {
             setEmail(virtruAuth[LOCAL_STORAGE.PUBLIC_AUTH]);
             setAuth(true);
         }
