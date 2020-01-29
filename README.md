@@ -12,27 +12,27 @@ For videos and tutorials, please visit the related [blog post](https://medium.co
 - [npm](https://www.npmjs.com/) v6.4+
 ## Install Requirements
 - Latest version of WordPress
-- NinjaForms Extension
-- Virtru NinjaForms Extension
+- Ninja Forms Extension
+- Virtru Ninja Forms Extension
 - Email assigned to “WordPress Site Administrator”
 ## Building the Extension
-Obtain the Repository
-- Clone the Repository
+- **Obtain the Repository**
+
 ```
+// Clone the Repository
 git clone https://github.com/virtru/wordpress-ninjaforms-secure.git
-```
-- Download the Zip File
-```
+
+// Download the Zip File
 curl https://github.com/virtru/wordpress-ninjaforms-secure/archive/master.zip -o wordpress-ninjaforms-secure.zip
 ```
-Unzip the download
+- **Unzip the download**
 ```
 cd wordpress-ninjaforms-secure-master
 npm install
 npm run build
 ```
-- zip the nf-virtru-plugin folder
-- ready to install 
+- **Zip the nf-virtru-plugin folder**
+- **Ready to Install**
  
 ## Help
 Thank you for using the Virtru Developer Platform!  
