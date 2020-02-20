@@ -12,7 +12,6 @@ import {
     LOGGER_TYPE
 } from "../../../../constants";
 import DecryptFilePortal from "./DecryptFilePortal";
-const base64 = require('virtru-base64');
 
 async function decryptingFile(postId, authEmail, fileUrl, decrypted) {
     const client = Virtru.createClient({email: authEmail});

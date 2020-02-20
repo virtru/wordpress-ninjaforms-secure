@@ -14,9 +14,9 @@ function buildEncryptParams(string, recipient) {
         .build();
 }
 
-function buildFileEncryptParams(stream, recipient, fileName) {
+function buildFileEncryptParams(buffer, recipient, fileName) {
     return new Virtru.EncryptParamsBuilder()
-        .withStreamSource(stream)
+        .withBufferSource(buffer)
         .withUsersWithAccess([recipient])
         .withDisplayFilename(fileName)
         .build();

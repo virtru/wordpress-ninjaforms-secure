@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import {
-    TDF
-} from 'tdf3-js';
 import Virtru from "../../../utils/VirtruWrapper";
 import {
     unMountComponent,
@@ -16,9 +13,9 @@ async function encryptFiles(email, fileData) {
     const ADMIN_EMAIL = adminEmail.data;
     if (fileData.files && fileData.files.length > 0) {
         const result = fileData.files.map(async (file) => {
-            const fileBuffer = await fileToArrayBuffer(file);
-            const contentStream = TDF.createMockStream(fileBuffer);
-            const encryptParams = Virtru.buildFileEncryptParams(contentStream, ADMIN_EMAIL, file.name);
+            const fileArrayBuffer = await fileToArrayBuffer(file);
+            const fileBuffer = new Uint8Array(fileArrayBuffer);
+            const encryptParams = Virtru.buildFileEncryptParams(fileBuffer, ADMIN_EMAIL, file.name);
             const encryptedField = await client.encrypt(encryptParams);
             const encryptedBuffer = await encryptedField.toBuffer();
             const policyId = encryptParams.getPolicyId();

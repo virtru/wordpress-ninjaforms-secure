@@ -14,7 +14,7 @@ import {
     SELECTORS
 } from "../../../constants";
 import moment from "moment";
-const base64 = require('virtru-base64');
+const base64 = require('../../../utils/base64');
 
 async function encryptFields(client, fieldsArray, recipient) {
     const result = fieldsArray.map(async (field) => {

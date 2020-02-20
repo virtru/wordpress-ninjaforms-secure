@@ -40,8 +40,6 @@
     "react-dom": "^16.12.0",
     "underscore": "^1.9.1",
     "uuid": "^3.3.3",
-    "virtru-base64": "git+ssh://git@github.com/virtru/virtru-base64.git#v0.0.9",
-    "virtru-sdk": "^1.6.11",
-    "tdf3-js": "git+ssh://git@github.com:virtru/tdf3-js.git#v2.2.8"
+    "virtru-sdk": "^1.6.11"
   }
 }

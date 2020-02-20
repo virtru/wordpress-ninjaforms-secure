@@ -12,7 +12,7 @@ import {
     LOCAL_STORAGE,
     LOGGER_TYPE
 } from "../../../../constants";
-const base64 = require('virtru-base64');
+const base64 = require('../../../../utils/base64');
 
 async function decryptData(postId, email) {
     const client = Virtru.createClient({email});
